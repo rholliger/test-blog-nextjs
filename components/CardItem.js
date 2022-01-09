@@ -31,7 +31,7 @@ const CardItem = ({ title, subtitle, image, date, author, link, mode = 'normal' 
           </Card.Header>
           <div className="view overlay">
             {
-              mode === 'placeholder' ?
+              mode === 'placeholder' || !image ?
                 <div className="image-placeholder" />
               :
                 <Card.Img
